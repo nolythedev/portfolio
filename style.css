@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Uncut Sans';
+    src: url(./assets/uncutSans/UncutSans-Variable.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 4.5rem;
+    color: #121316;
+    font-family: 'Uncut Sans', sans-serif;
+}
+
+#hero {
+    margin: 5rem 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 6.5vw;
+}
+
+#worksGrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 50% 50%;
+    grid-template-areas: 
+    "projectOne projectOne"
+    "projectTwo projectThree"
+    "projectFour projectFive";
+}
+
+.worksGridArea{
+    border-radius: 1rem;
+}
+
+#projectOne {
+ 
+    grid-area: projectOne;
+    background-color: #0a1806;
+}
+
+#projectTwo {
+    grid-area: projectTwo;
+    background-color: #037aff;
+}
+
+#projectThree {
+    grid-area: projectThree;
+    background-color: #ff78fa;
+}
+
+#projectFour {
+    grid-area: projectFour;
+    background-color: #ff1e48;
+}
+
+#projectFive {
+    grid-area: projectFive;
+    background-color: #dfff01;
+}
