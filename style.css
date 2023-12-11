@@ -1,6 +1,7 @@
-@font-face {
-    font-family: 'Uncut Sans';
-    src: url(./assets/uncutSans/UncutSans-Variable.woff2);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --dark-txt: #121316;
 }
 
 * {
@@ -11,8 +12,43 @@
 
 body {
     padding: 0 4.5rem;
-    color: #121316;
-    font-family: 'Uncut Sans', sans-serif;
+    color: var(--dark-txt);
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+header a {
+    font-size: 24px;
+    color: var(--dark-txt);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+header .logo img {
+    width: 20px;
+}
+
+header nav a {
+    margin: 20px;
+    text-transform: lowercase;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 #hero {
@@ -20,19 +56,21 @@ body {
 }
 
 h1 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 6.5vw;
 }
 
 #worksGrid {
+    height: 70vh;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "projectOne projectOne"
-    "projectTwo projectThree"
-    "projectFour projectFive";
+    "projectOne projectOne projectTwo projectTwo"
+    "projectOne projectOne projectThree projectFour"
+    "projectFive projectFive projectThree projectFour"
+    ;
 }
 
 .worksGridArea{
@@ -40,7 +78,6 @@ h1 {
 }
 
 #projectOne {
- 
     grid-area: projectOne;
     background-color: #0a1806;
 }
