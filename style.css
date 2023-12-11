@@ -5,6 +5,11 @@
     --twentyMargin: 20px;
 }
 
+html,
+body {
+    min-height: 100%;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -61,20 +66,22 @@ header nav a:hover {
 }
 
 h1 {
+    color: #e5e5e5;
     font-weight: 400;
     font-size: 6.5vw;
 }
 
 #worksGrid {
-    height: 70vh;
+    height: 100%;
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px 600px 600px;
     grid-template-areas: 
-    "projectOne projectOne projectTwo projectTwo"
-    "projectOne projectOne projectThree projectFour"
-    "projectFive projectFive projectThree projectFour"
+    "projectOne projectTwo"
+    "projectThree projectFour"
+    "projectFive projectFive"
+   
     ;
 }
 
@@ -105,9 +112,21 @@ h1 {
     transform: scale(0.9); 
 }
 
+#projectOne,
+#projectTwo,
+#projectThree,
+#projectFour,
+#projectFive {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #projectOne {
     grid-area: projectOne;
-    background-color: #2d323f;;
+    background-color: #2d323f;
+    background-image: url(./assets/horiseon.jpg);
+
 }
 
 #projectTwo {
@@ -131,9 +150,16 @@ h1 {
 }
 
 footer {
+    margin-top: auto;
     margin: 4rem auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-transform: lowercase;
+    font-size: 24px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
