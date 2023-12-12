@@ -139,6 +139,7 @@ h1 {
 
 #projectOne {
     grid-area: projectOne;
+    background-image: url(./assets/horiseon.jpg);
     background-color: #2d323f;
 
 }
