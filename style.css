@@ -188,10 +188,11 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    row-gap: 5px;
     }
 
     header nav a {
-        margin: 15px 10px 0px 0px;
+        margin: 0 10px 0 0;
     }
 
     h1 {
@@ -213,7 +214,7 @@ footer a:hover {
         ;
     }
   
-    .icons {
-      margin-left: auto;
+    footer {
+      margin: 2rem auto 0 auto;
     }
   }
