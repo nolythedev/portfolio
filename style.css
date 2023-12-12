@@ -179,6 +179,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer img {
+    width: 4.5rem;
+    height: auto;
+}
+
 @media only screen and (max-width: 760px) {
     body {
         padding: 2rem;
