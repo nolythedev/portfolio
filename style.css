@@ -75,22 +75,31 @@ h1 {
     height: 100%;
     display: grid;
     gap: 20px;
-    grid-template-columns: 50% 50%;
     grid-template-rows: 600px 600px 600px;
     grid-template-areas: 
     "projectOne projectTwo"
     "projectThree projectFour"
     "projectFive projectFive"
-   
     ;
+    
+}
+
+.gridHeader {
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+    font-size: 24px;
 }
 
 .worksGridArea{
+    padding: var(--twentyMargin);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .worksGridArea .viewMore {
-    margin: var(--twentyMargin);
     display: flex;
     justify-content: flex-end;
 }
@@ -112,6 +121,12 @@ h1 {
     transform: scale(0.9); 
 }
 
+.heading {
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
 #projectOne,
 #projectTwo,
 #projectThree,
@@ -125,7 +140,6 @@ h1 {
 #projectOne {
     grid-area: projectOne;
     background-color: #2d323f;
-    background-image: url(./assets/horiseon.jpg);
 
 }
 
@@ -163,3 +177,43 @@ footer {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 760px) {
+    body {
+        padding: 2rem;
+    }
+
+    header {
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 15px 10px 0px 0px;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    #hero {
+        margin: 2rem 0;
+    }
+
+    #worksGrid  {
+        grid-template-rows: 400px 400px 400px 400px 400px;
+        grid-template-areas: 
+        "projectOne"
+        "projectTwo"
+        "projectThree"
+        "projectFour"
+        "projectFive"
+        ;
+    }
+  
+    .icons {
+      margin-left: auto;
+    }
+  }
