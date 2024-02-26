@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Noly the Dev - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Noly the Dev - Portfolio</title>
 </head>
+
 <body class="light">
-    <header>
-      <div class="logo">
-        <a href="#">noly.dev</a>
-      </div>
-        <nav>
-            <a href="#hero">About</a>
-            <a href="#worksGrid">Works</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="hero">
-        <h1>
-            Creative <span class="wavyUnderline">front end developer </span> with a flare for design and development.
-        </h1>
-    </section>
+  <header>
+    <div class="logo">
+      <a href="#">noly.dev</a>
+    </div>
+    <nav>
+      <a href="#hero">About</a>
+      <a href="#worksGrid">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="hero">
+    <h1 data-scroll data-scroll-speed="0.2">
+      Creative front-end developer with a flare for design and development.
+    </h1>
+  </section>
 
-   
-    <p class="gridHeader">RECENT WORKS</p>
-  
-    <section id="worksGrid">
-      <div id="projectOne" class="worksGridArea">
-        <div class="viewMore">
-          <a href="https://nolythedev.github.io/challenge-1-horiseon/" target="_blank">&nearr;</a>
-        </div>
-        <div class="heading">#Horiseon SEO</div>
+
+  <p class="gridHeader">RECENT WORKS</p>
+
+  <section id="worksGrid" >
+    <div id="projectOne" class="worksGridArea">
+      <div class="viewMore">
+        <a href="https://nolythedev.github.io/sneakers/" target="_blank">&nearr;</a>
       </div>
-      <div id="projectTwo" class="worksGridArea">
-        <div class="viewMore">
-          <a href="#" target="_blank">&nearr;</a>
+      <div class="project-information heading">
+        #Sneakers
+        <div class="hashtags">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>VanillaJS</p>
         </div>
-        <div class="heading">#Project Two</div>
       </div>
-      <div id="projectThree" class="worksGridArea">
-        <div class="viewMore">
-          <a href="#" target="_blank">&nearr;</a>
+    </div>
+    <div id="projectTwo" class="worksGridArea">
+      <div class="viewMore">
+        <a href="#" target="_blank">&nearr;</a>
+      </div>
+      <div class="project-information heading">
+        #We-do
+        <div class="hashtags">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JQuery</p>
         </div>
-        <div class="heading">#Project Three</div>
       </div>
-      <div id="projectFour" class="worksGridArea">
-        <div class="viewMore">
-          <a href="#" target="_blank">&nearr;</a>
-        </div>
-        <div class="heading">#Project Four</div>
+    </div>
+    <div id="projectThree" class="worksGridArea">
+      <div class="viewMore">
+        <a href="#" target="_blank">&nearr;</a>
       </div>
-      <div id="projectFive" class="worksGridArea">
-        <div class="viewMore">
-          <a href="#" target="_blank">&nearr;</a>
-        </div>
-        <div class="heading">#Project Five</div>
+      <div class="heading">#Project Three</div>
+    </div>
+    <div id="projectFour" class="worksGridArea">
+      <div class="viewMore">
+        <a href="#" target="_blank">&nearr;</a>
       </div>
-    </section>
-    <footer id="contact">
-        <p>&copy; 2024</p>
-        <button id="themeToggle"></button>
-       <!-- <img src="./assets/noly.png" alt="Avatar of myself"> -->
-        <a>Resume</a>
-    </footer>
-    <script src="./assets/js/script.js"></script>
+      <div class="heading">#Project Four</div>
+    </div>
+    <div id="projectFive" class="worksGridArea">
+      <div class="viewMore">
+        <a href="#" target="_blank">&nearr;</a>
+      </div>
+      <div class="heading">#Project Five</div>
+    </div>
+  </section>
+  <footer id="contact">
+    <p>&copy; 2024</p>
+    <button id="themeToggle"></button>
+    <!-- <img src="./assets/noly.png" alt="Avatar of myself"> -->
+    <a>Resume</a>
+  </footer>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  </script>
+
 </body>
+
 </html>
-
-

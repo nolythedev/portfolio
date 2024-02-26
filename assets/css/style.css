@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --dark-bg: #121316;
+    --dark-bg: #212327;
     --light-bg: #ffffff;
-    --dark-txt: #121316;
+    --dark-txt: #212327;
     --light-txt: #ffffff;
     --twentyMargin: 20px;
 
@@ -20,16 +20,29 @@ body {
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: red;
+}
+
 a {
     color: var(--dark-txt);
     text-decoration: none;
-    cursor: pointer;
+}
+
+a:hover {
+    cursor: url(../images/cursor.png), auto !important;
+    
 }
 
 body {
     padding: 0 4.5rem;
     color: var(--dark-txt);
     font-family: 'Inter', sans-serif;
+    cursor: url(../images/cursor.png) !important;
+    cursor: -webkit-image-set(
+        url(../images/cursor.png) 1x,
+        url(../images/cursor.png) 2x
+      ), auto !important;
 }
 
 .light {
@@ -118,6 +131,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+ 
     
 }
 
@@ -149,26 +163,54 @@ h1 {
     text-transform: lowercase;
 }
 
+.project-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hashtags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+   ; 
+}
+
+
+.hashtags p {
+    font-size: 1rem;
+    background-color: #ffffff5c;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all .2s ease-in-out
+}
+
+.hashtags p:hover {
+    transform: scale(0.9); 
+}
+
 #projectOne,
 #projectTwo,
 #projectThree,
 #projectFour,
 #projectFive {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
 #projectOne {
     grid-area: projectOne;
-    background-image: url(/assets/images/horiseon.jpg);
-    background-color: #2d323f;
-
+    /* background-image: url('../images/shoe-3.jpg'); */
+    background-color: #F0EEEE;
+    background-image: url('../images/shoe-3.jpg');
 }
 
 #projectTwo {
     grid-area: projectTwo;
     background-color: #f0efe9;
+  
 }
 
 #projectThree {
