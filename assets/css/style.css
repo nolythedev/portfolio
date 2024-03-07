@@ -147,7 +147,8 @@ h1 {
     justify-content: center;
     height: 50px;
     width: 50px;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #212327;
     border-radius: 200%;
     font-size: 24px;
     transition: all .2s ease-in-out; 
@@ -158,7 +159,7 @@ h1 {
 }
 
 .heading {
-    color: #ffffff;
+    color: #212327;
     font-size: 2rem;
     text-transform: lowercase;
 }
@@ -210,7 +211,8 @@ h1 {
 #projectTwo {
     grid-area: projectTwo;
     background-color: #f0efe9;
-  
+    background-image: url('../images/studionoch.png');
+    background-size: cover;
 }
 
 #projectThree {
