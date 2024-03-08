@@ -2,23 +2,47 @@ console.log('Script has loaded');
 
 import { projects } from "../utils/projects.js";
 
-for (const project of projects) {
-    console.log(project.id, project.title );
-    
+// Target the button 
+const bodyEl = document.body;
+const projectGrid = document.querySelector('#projectGrid');
+const themeBtn = document.querySelector('#themeToggle');
+const lightMoon = '<i class="fa-solid fa-circle"></i>';
+const darkMoon = '<i class="fa-regular fa-circle"></i>';
+
+
+
+function displayProjects() {
+
+  for (const project of projects) {
+    console.log(projects.length);
+
+      let divEl = document.createElement("div");
+      divEl.setAttribute('id',project.id);
+      divEl.className = 'project';
+      divEl.innerHTML = `
+      <img src=${project.imgUrl} class="projectImg">
+      <div class="viewMore">
+      <a href=${project.projectUrl} target="_blank" alt=${project.title}>&#x2197;</a>
+      </div>
+      <div class="project-information heading">
+      ${project.title}
+      <div class="tags">
+      <ul>
+      ${project.tags.map(tag => `<li>${tag}</li>`).join('')}
+      </ul>
+      </div>
+      </div>
+      `;
+     
+      projectGrid.append(divEl);
+  }
+  
 }
 
 
-// Target the button 
-const bodyEl = document.body;
-const traitsEl = document.querySelector('#traits');
-const themeBtn = document.querySelector('#themeToggle');
-const lightMoon = '<i class="fa-regular fa-sun"></i>';
-const darkMoon = '<i class="fa-solid fa-moon"></i>';
-
-let isDark = true; // Check if this should be set to true or false initially
-
 // On click check if light or dark and set to light or dark
 
+let isDark = true; // Check if this should be set to true or false initially
 themeBtn.addEventListener("click", function (e) {
     e.preventDefault();
     // console.log('isDark before toggle:', isDark);
@@ -54,5 +78,6 @@ if (darkMode === 'Active') {
 // Set initial text content of themeBtn 
 
 // Set initial css of button
+displayProjects();
 
 themeBtn.setAttribute('style', 'color: #121316; background-color: transparent; border: none; font-size: 25px; cursor: pointer;');
