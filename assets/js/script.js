@@ -1,5 +1,13 @@
 console.log('Script has loaded');
 
+import { projects } from "../utils/projects.js";
+
+for (const project of projects) {
+    console.log(project.id, project.title );
+    
+}
+
+
 // Target the button 
 const bodyEl = document.body;
 const traitsEl = document.querySelector('#traits');
