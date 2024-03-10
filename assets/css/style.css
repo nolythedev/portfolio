@@ -156,6 +156,8 @@ ul {
 
 .viewMore a:hover {
     transform: scale(0.9); 
+    transform: rotate(-45deg);
+
 }
 
 .heading {

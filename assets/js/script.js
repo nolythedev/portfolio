@@ -22,7 +22,7 @@ function displayProjects() {
       divEl.innerHTML = `
       <img src=${project.imgUrl} class="projectImg">
       <div class="viewMore">
-      <a href=${project.projectUrl} target="_blank" alt=${project.title}>&#x2197;</a>
+      <a href=${project.projectUrl} target="_blank" alt=${project.title}><i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="project-information heading">
       ${project.title}
