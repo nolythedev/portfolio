@@ -184,6 +184,7 @@ ul {
 .tags ul li {
     opacity: 0.6;
 }
+
     
 
 footer {
@@ -236,6 +237,10 @@ footer i {
 
     .project {
         width: 100%;
+    }
+
+    .projectImg {
+        height: 400px;
     }
   
     footer {
