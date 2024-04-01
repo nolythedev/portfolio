@@ -13,5 +13,12 @@ export const projects = [
         projectUrl: "https://studionoch.netlify.app/",
         tags: ['React','React Router' ]
     },
+    {
+        id: 3,
+        title: "Pouch - Finance Tracker",
+        imgUrl: "./assets/images/pouch.png",
+        projectUrl: "https://pouch-finance-tracker.netlify.app/",
+        tags: ['React','React Router', 'Firebase' ]
+    },
   
 ]
