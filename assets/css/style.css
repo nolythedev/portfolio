@@ -59,7 +59,8 @@ body {
 .dark a:not(.viewMore a),
 .dark p,
 .dark h1,
-.dark button{
+.dark button,
+.dark .heading{
     color: var(--light-txt) !important;
 }
 
